@@ -61,11 +61,7 @@ savedJokeContainer.innerHTML = savedJokes.map(joke => {
 }).join('')
   }
  
-  function deleteJoke(num) {
-console.log('delete')
-localStorage.removeItem(savedItems[num])
-
-  }
+  
   
   
 function clearStorage() {
