@@ -1,7 +1,6 @@
 let container = document.querySelector('.response')
 let favbtn = document.querySelector('#favorites')
 let saved = document.querySelector('.saved')
-let savedItems = []
 let options = {
     headers: {
         'accept': "text/plain",
@@ -36,7 +35,6 @@ function saveJoke() {
     localStorage.setItem(result, container.innerText); 
     console.log('saved')
     favbtn.innerText = 'Added'  
-    savedItems.push(result)
     console.log(savedItems)                                                                                                                              
   }
   let savedJokeContainer = document.querySelector('.saved')
@@ -61,12 +59,6 @@ savedJokeContainer.innerHTML = savedJokes.map(joke => {
 }).join('')
   }
  
-  function deleteJoke(num) {
-console.log('delete')
-localStorage.removeItem(savedItems[num])
-
-  }
-  
   
 function clearStorage() {
     localStorage.clear()
