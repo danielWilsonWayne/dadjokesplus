@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../Js/script.js" defer></script>
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="favs.html">your saved</a>
+        <a href="#">your jokes</a>
+        <a href="#">your notes</a>
+        <a href="create.html">create</a>
+      </div>
+      <div class="main">
+   <button onclick="getJoke()">Get Dad Joke</button>
+<div class="response"></div>
+</div>
+<button class="openbtn" onclick="openNav()">&#9776;</button>
+<div class="corner">
+<button id="favorites" onclick="saveJoke()"><i class="fas fa-heart"></i> Add to Favorites</button>
+</div>
+
+</body>
+</html>
